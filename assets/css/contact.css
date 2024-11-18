@@ -1,0 +1,88 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif; /* Default font for the body */
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Light background color */
+    color: #333; /* Default text color */
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+    color: #333; /* Header text color */
+    text-align: center; /* Center align headers */
+}
+
+/* Container */
+/* Container */
+.container {
+    max-width: 800px; /* Maximum width of the container */
+    margin: 100px auto; /* Center the container with a top margin */
+    padding: 30px; /* Padding around the content */
+    background: #ffffff; /* White background for the container */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-top: 12.5rem; /* Add this line to create space below the navbar */
+}
+
+
+/* Form Styles */
+form {
+    display: flex; /* Use flexbox for form layout */
+    flex-direction: column; /* Arrange items in a column */
+}
+
+.styled-input {
+    margin-bottom: 20px; /* Space between input fields */
+    position: relative; /* Position for potential pseudo-elements */
+}
+
+.styled-input input,
+.styled-input textarea {
+    width: 100%; /* Full width of the parent */
+    padding: 12px; /* Padding inside the input */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1rem; /* Font size */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition for border color */
+}
+
+.styled-input input:focus,
+.styled-input textarea:focus {
+    border-color: #8cd6b6; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(140, 214, 182, 0.5); /* Add shadow on focus */
+    outline: none; /* Remove default outline */
+}
+
+textarea {
+    resize: none; /* Disable resizing of textarea */
+}
+
+/* Submit Button */
+.submit-btn {
+    background-color: #8cd6b6; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 12px 24px; /* Padding for button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1rem; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition for background color */
+}
+
+.submit-btn:hover {
+    background-color: #7ac4a4; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .submit-btn {
+        padding: 10px 20px; /* Adjust button padding for smaller screens */
+        font-size: 0.9rem; /* Smaller font size for buttons */
+    }
+}

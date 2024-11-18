@@ -1,0 +1,435 @@
+/* Blog Navigation */
+button, input {
+    font: 1em 'Hind', sans-serif;
+    line-height: 1.5em;
+}
+
+body, input {
+    color: #171717;
+}
+
+/* Blog Navigation Header Styles */
+.blog-nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    background-color: #f8f9fa; /* Light background for contrast */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.left-links {
+    display: flex;
+    gap: 1.5em; /* Space between links */
+}
+
+.left-links a {
+    text-decoration: none;
+    color: #4caf50; /* Change this to your desired shade of green */
+    font-weight: 600; /* Bold links */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.left-links a:hover {
+    color: #45a049; /* Slightly darker green on hover */
+}
+
+.right-search {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    width: 250px; /* Fixed width for search input */
+    padding: 0.5em;
+    border: 1px solid #ddd;
+    border-radius: 0.375em; /* Rounded corners */
+    transition: border-color 0.3s ease; /* Smooth transition for focus */
+}
+
+.search-input:focus {
+    border-color: #0c48db; /* Blue border on focus */
+    outline: none; /* Remove outline */
+}
+
+.search-btn {
+    background: #8cd6b6; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    border-radius: 0.375em; /* Rounded corners */
+    padding: 0.5em 1em; /* Padding for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-left: 0.5em; /* Space between input and button */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.search-btn:hover {
+    background: #0056b3; /* Darker blue on hover */
+}
+
+/* Blog Container */
+.blog-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+/* Blog Card */
+.blog-card {
+    display: flex;
+    width: 60%;
+    background-color: #fff;
+    border: 1px solid #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+}
+
+.blog-img {
+    width: 50%; /* Maintain the width of the image */
+    height: auto; /* Set height to auto to maintain aspect ratio */
+    border-right: 1px solid #ccc; /* Divider */
+    object-fit: cover; /* This property ensures the image covers the area without distortion */
+}
+
+.blog-content {
+    width: 80%;
+    padding: 20px;
+}
+
+.blog-info {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.likes {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #999;
+    margin-top: 10px; /* Added spacing from content */
+}
+
+.like-heart {
+    font-size: 20px; /* Increased heart size */
+    margin-left: 10px;
+    transition: color 0.3s ease;
+}
+
+.like-heart.filled {
+    color: red; /* Filled heart color */
+}
+
+.like-count {
+    font-size: 16px; /* Increased count size */
+    margin-right: 5px;
+    color: #555; /* Darker color for contrast */
+}
+
+.blog-content h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.blog-content p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.blog-stats {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-top: 20px;
+    color: #999;
+}
+
+.read-more {
+    text-decoration: none;
+    color: #8cd6b6;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    color: #7ac4a4;
+}
+
+.divider {
+    height: 1px;
+    background-color: #ccc;
+    margin-top: 100px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.user-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.author-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.date-info {
+    font-size: 14px;
+    color: #999;
+}
+
+.blog-single-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.blog-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.blog-single-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.blog-header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.blog-meta {
+    font-size: 14px;
+    color: #999;
+}
+
+.blog-content {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.blog-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+.blog-interactions span {
+    margin-right: 15px;
+}
+
+.back-to-blogs {
+    text-decoration: none;
+    color: #8cd6b6;
+}
+
+.back-to-blogs:hover {
+    color: #7ac4a4;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .blog-menu {
+        flex-direction: column; /* Stack the menu items vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .blog-card {
+        flex-direction: column; /* Stack image and content vertically */
+        width: 90%; /* Full width on smaller screens */
+    }
+
+    .blog-img {
+        width: 100%; /* Full width for images */
+        height: auto;
+    }
+
+    .blog-content {
+        width: 100%; /* Full width for content */
+        padding: 10px;
+    }
+
+    .search-bar {
+        flex-direction: column; /* Stack the search elements */
+    }
+
+    .search-input {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    .search-btn {
+        width: 100%; /* Full width button */
+    }
+
+    .blog-footer {
+        flex-direction: column; /* Stack the footer elements */
+    }
+}
+
+
+/* Center the heading */
+.comments-heading {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Slideshow container for comments */
+.slideshow-container {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;  /* Center the slideshow */
+    max-height: 300px;
+    overflow: hidden; /* Hide overflowed content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Add some shadow */
+}
+
+/* Each comment slide */
+.comment-slide {
+    display: none; /* Hide all slides initially */
+    text-align: left;
+    color: #555;
+    padding: 15px;
+    transition: opacity 0.5s ease; /* Smooth transition between slides */
+}
+
+/* Show the active slide */
+.comment-slide.active {
+    display: block; /* Only show the active slide */
+}
+
+/* Style for each comment */
+.comment-slide p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+/* Comment box for user input */
+.comment-box {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-top: 30px;
+    width: 80%;
+    margin: 30px auto;  /* Center the comment box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Add shadow */
+    color: black;
+}
+
+/* Comment input fields */
+.comment-input input, .comment-input textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: black;
+}
+
+/* Comment buttons */
+.comment-buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.comment-buttons button {
+    background-color: #b38d64;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.comment-buttons button[disabled] {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Hover effects for buttons */
+.comment-buttons button:hover:not([disabled]) {
+    background-color: #a37754;
+}
+
+/* Like and views section styling */
+.likes {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.like-heart {
+    margin-left: 10px;
+    color: red;
+}
+
+.like-heart.filled {
+    color: #e74c3c; /* Filled heart color */
+}
+
+.back-to-blogs {
+    display: inline-block;
+    margin-top: 20px;
+    color: #b38d64;
+    text-decoration: none;
+}
+
+.back-to-blogs:hover {
+    text-decoration: underline;
+}
+
+.all-blogs-button {
+    text-align: center;
+    margin: 20px;
+}
+
+.view-all-blogs {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #8cd6b6;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.view-all-blogs:hover {
+    background-color: #7ac4a4;
+}
